@@ -1,0 +1,135 @@
+.favorites {
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  gap: 24px;
+
+  h2 {
+    color: var(--Base-Black, #000);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    border-radius: 16px;
+
+
+
+
+
+    .accordionIcon {
+      align-items: center;
+      display: flex;
+
+      svg {
+        color: #1e1e1e;
+        text-align: center;
+        font-family: Font Awesome 5 Pro;
+        font-size: 20px;
+        font-style: normal;
+        transition: 0.3s;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .isAccordionAcc {
+      svg {
+        transition: 0.3s;
+        transform: rotate(0.5turn);
+      }
+    }
+
+
+  }
+
+  .favorites_wrap {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr 3fr;
+    grid-gap: 24px;
+    grid-auto-flow: dense;
+
+    @media screen and (max-width:1084px) {
+
+      grid-template-columns: 3fr 3fr 3fr;
+
+      @media screen and (max-width:771px) {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 6fr 6fr;
+      grid-gap: 16px;
+    }
+  }
+}
+
+.modalson {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.50);
+  backdrop-filter: blur(6px);
+  z-index: 999;
+
+  .modalgul {
+    width: 100%;
+    height: 60%;
+    padding: 16px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background: var(--white, #FFF);
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+    max-height: 400px;
+    overflow: scroll;
+
+    p {
+      color: var(--Base-Black, #000);
+      text-align: center;
+      font-size: 17px;
+      font-weight: 700;
+      font-family: Inter;
+      margin: 0 auto 16px;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 16px;
+      color: var(--Base-Black, #000);
+      font-size: 14px;
+      font-weight: 400;
+      text-align: left;
+      border-radius: 8px;
+      background: #F5F6F8;
+    }
+
+  }
+
+  .modalgul::-webkit-scrollbar {
+    width: 7px !important;
+  }
+
+  .modalgul::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: var(--main, #e71717);
+  }
+
+}
+
+.FaRegCircleCheck {
+  color: #e71717;
+}

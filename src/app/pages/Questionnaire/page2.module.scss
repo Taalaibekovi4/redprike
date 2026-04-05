@@ -1,0 +1,385 @@
+// .Blocks {
+//   display: flex;
+//   row-gap: 20px;
+
+//   justify-content: center;
+//   padding-bottom: 60px;
+//   padding-top: 40px;
+//   justify-content: center;
+//   align-items: center;
+//   margin: 0 auto;
+
+//   @media screen and (max-width:450px) {
+//     row-gap: 16px;
+
+//   }
+
+//   h2 {
+//     color: #e71717;
+//     font-feature-settings: 'clig'off, 'liga'off;
+//     font-family: Source Sans Pro700;
+//     font-size: 26px;
+//     font-style: normal;
+//     font-weight: 600;
+//     line-height: 20px;
+//     /* 76.923% */
+//     letter-spacing: -0.24px;
+
+//     @media screen and (max-width:450px) {
+//       font-size: 18px !important;
+//     }
+//   }
+
+//   .block {
+//     display: grid;
+//     row-gap: 20px;
+//     width: 744px;
+
+//     @media screen and (max-width: 795px) {
+//       width: 100%;
+
+//       @media screen and (max-width:450px) {
+//         row-gap: 16px;
+//         gap: 16px;
+//       }
+//     }
+
+//     .anketa {
+//       display: grid;
+//       gap: 20px;
+
+//       label {
+//         color: var(--545454, #545454);
+//         font-feature-settings: 'clig'off, 'liga'off;
+//         font-family: Source Sans Pro900;
+//         font-size: 20px;
+//         font-style: normal;
+//         font-weight: 900;
+//         line-height: normal;
+
+//         @media screen and (max-width:450px) {
+//           font-size: 16px !important;
+//         }
+//       }
+
+//       input {
+//         border-radius: 8px;
+//         background: #F3F3F3;
+//         display: flex;
+//         width: 100%;
+//         height: 40px;
+//         padding: 12px;
+//         align-items: center;
+//         gap: 10px;
+//         padding: 12px;
+//         align-items: center;
+//         gap: 10px;
+//         color: #5A5A5A;
+//         font-family: Source Sans Pro400;
+//         font-size: 18px;
+//         font-style: normal;
+//         font-weight: 400;
+//         line-height: normal;
+//         border-radius: 8px;
+//         background: #F3F3F3;
+
+//         @media screen and (max-width:450px) {
+//           height: 52px;
+//           font-size: 14px;
+//         }
+
+
+//       }
+
+//     }
+//   }
+// }
+
+
+
+// .csa {
+//   display: flex;
+//   gap: 20px;
+//   justify-content: center;
+//   width: 100%;
+//   border-radius: 8px;
+//   background: #F3F3F3;
+//   display: flex;
+//   width: 100%;
+//   height: 40px;
+//   padding: 12px;
+//   align-items: center;
+//   gap: 10px;
+//   padding: 12px;
+//   align-items: center;
+//   gap: 10px;
+//   ;
+
+//   @media screen and (max-width:450px) {
+//     height: 42px;
+//   }
+
+//   label {
+//     color: #5A5A5A;
+//     font-family: Source Sans Pro400;
+//     font-style: normal;
+//     font-weight: 200 !important;
+//     line-height: normal;
+//     text-align: center;
+//     display: flex;
+//     justify-content: center;
+//     gap: 10px;
+
+//     @media screen and (max-width:450px) {
+//       font-size: 16px !important;
+//     }
+
+//     background: #F3F3F3;
+//     text-transform: lowercase;
+
+//     svg {
+//       width: 20px;
+//       height: 20px;
+//       align-items: center;
+//     }
+//   }
+// }
+
+// .inputValue {
+//   width: 100%;
+//   justify-content: space-between;
+//   display: flex;
+//   align-items: center;
+
+//   p {
+//     color: #5A5A5A;
+//     font-family: Source Sans Pro;
+//     font-size: 18px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: normal;
+
+//     @media screen and (max-width:450px) {
+//       font-size: 14px;
+//     }
+//   }
+
+//   svg {
+//     color: #5A5A5A;
+//     text-align: center;
+//     font-feature-settings: 'clig'off, 'liga'off;
+//     font-family: Font Awesome 5 Pro;
+//     font-size: 24px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 20px;
+//     /* 83.333% */
+//     letter-spacing: -0.24px;
+//   }
+// }
+
+// .anketas {
+//   display: grid;
+//   gap: 20px;
+
+//   label {
+//     color: var(--545454, #545454);
+//     font-feature-settings: 'clig'off, 'liga'off;
+//     font-family: Source Sans Pro900;
+//     font-size: 20px;
+//     font-style: normal;
+//     font-weight: 900;
+//     line-height: normal;
+
+//     @media screen and (max-width:450px) {
+//       font-size: 18px !important;
+//     }
+//   }
+// }
+
+
+// .formcControl {
+//   font-family: system-ui, sans-serif;
+//   font-size: 2rem;
+//   font-weight: bold;
+//   line-height: 1.1;
+//   display: grid;
+//   grid-template-columns: 1em auto;
+//   gap: 0.5em;
+
+//   input[type="checkbox"] {
+//     /* Add if not using autoprefixer */
+//     -webkit-appearance: none;
+//     /* Remove most all native input styles */
+//     appearance: none;
+//     /* For iOS < 15 */
+//     background-color: var(--form-background);
+//     /* Not removed via appearance */
+//     margin: 0;
+
+//     font: inherit;
+//     color: currentColor;
+//     width: 1.15em;
+//     height: 1.15em;
+//     border: 0.15em solid currentColor;
+//     border-radius: 0.15em;
+//     transform: translateY(-0.075em);
+
+//     display: grid;
+//     place-content: center;
+//   }
+
+//   input[type="checkbox"]::before {
+//     content: "";
+//     width: 0.65em;
+//     height: 0.65em;
+//     clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+//     transform: scale(0);
+//     transform-origin: bottom left;
+//     transition: 120ms transform ease-in-out;
+//     box-shadow: inset 1em 1em var(--form-control-color);
+//     /* Windows High Contrast Mode */
+//     background-color: CanvasText;
+//   }
+
+//   input[type="checkbox"]:checked::before {
+//     transform: scale(1);
+//   }
+
+//   input[type="checkbox"]:focus {
+//     outline: max(2px, 0.15em) solid currentColor;
+//     outline-offset: max(2px, 0.15em);
+//   }
+
+//   input[type="checkbox"]:disabled {
+//     --form-control-color: var(--form-control-disabled);
+
+//     color: var(--form-control-disabled);
+//     cursor: not-allowed;
+//   }
+// }
+
+// .formControl+.form-control {
+//   margin-top: 1em;
+// }
+
+// .asdsa {
+//   width: 1px !important;
+//   height: 1px !important;
+//   overflow: hidden !important;
+//   opacity: 0;
+// }
+
+// .error {
+//   color: red !important;
+// }
+
+// .fromCod {
+//   display: grid;
+//   gap: 10px;
+//   margin-top: 10px;
+
+//   input {
+//     border-radius: 8px;
+//     background: #F3F3F3;
+//     display: flex;
+//     width: 100%;
+//     height: 40px;
+//     padding: 12px;
+//     align-items: center;
+//     gap: 10px;
+//     padding: 12px;
+//     align-items: center;
+//     gap: 10px;
+//     color: #000;
+//     font-family: Source Sans Pro400;
+//     font-size: 18px;
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: normal;
+//     border-radius: 8px;
+//     background: #F3F3F3;
+
+
+
+//   }
+
+//   button {
+//     height: 40px;
+//     border-radius: 8px;
+//     color: #fff;
+//     font-family: Source Sans Pro400;
+//     font-size: 18px;
+//     background: var(--ee-5922, #e71717);
+//   }
+// }
+
+// .button {
+//   height: 40px;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 10px;
+//   border-radius: 8px;
+//   background: var(--ee-5922, #e71717);
+//   color: #FBFBFC;
+//   font-family: Source Sans Pro700;
+//   font-size: 24px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+//   cursor: not-allowed;
+//   opacity: 0.5;
+
+//   @media screen and (max-width:450px) {
+//     height: 44px;
+//     font-size: 16px;
+//   }
+
+
+// }
+
+// .anketaBox p {
+//   color: var(--545454, #000);
+//   font-feature-settings: 'clig'off, 'liga'off;
+//   font-family: Source Sans Pro400;
+//   font-size: 16px;
+//   font-style: normal;
+//   font-weight: 600;
+//   line-height: normal;
+
+//   @media screen and (max-width:450px) {
+//     font-size: 16px !important;
+//   }
+// }
+
+// .btn_orange {
+//   height: 50px;
+//   padding: 12px;
+//   justify-content: center;
+//   align-items: center;
+//   gap: 10px;
+//   border-radius: 8px;
+//   background: var(--ee-5922, #e71717);
+//   color: #FBFBFC;
+//   font-family: Source Sans Pro700;
+//   font-size: 24px;
+//   font-style: normal;
+//   font-weight: 700;
+//   line-height: normal;
+//   opacity: 1;
+
+//   cursor: pointer;
+
+//   @media screen and (max-width:450px) {
+//     height: 44px;
+//     font-size: 16px;
+//   }
+
+//   div {
+//     margin: 0 auto !important;
+//   }
+// }
+
+// .Blocks2 {
+//   display: block !important;
+// }

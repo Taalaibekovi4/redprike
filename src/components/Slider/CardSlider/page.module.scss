@@ -1,0 +1,25 @@
+.mySwiper {
+  width: 100%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+
+  .slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+.mySwiper2 {
+  width: 100%;
+  height: 350px;
+  @media screen and (max-width: 600px) {
+    height: 300px;
+  }
+}

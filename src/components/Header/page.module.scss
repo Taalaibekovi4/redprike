@@ -1,0 +1,106 @@
+.header {
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 0;
+    @media screen and (max-width: 600px) {
+      margin: 24px 0 12px;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 170px;
+      padding: 10px 0;
+
+      @media screen and (max-width: 600px) {
+        padding: 0;
+      }
+
+      .logo {
+        width: 90px;
+        height: 80px;
+
+        @media screen and (max-width: 600px) {
+          
+        }
+      }
+
+      .nav_bar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        @media screen and (max-width: 1300px) {
+          display: none;
+        }
+
+        a {
+          color: var(--151515, #151515);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          transition: all 0.3s ease;
+
+          &:hover {
+            color: var(--main, #e71717);
+          }
+        }
+
+        .active {
+          color: var(--main, #e71717);
+          font-family: Inter;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+      }
+    }
+
+    .phone {
+      .link {
+        color: #1e1e1e;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (max-width: 600px) {
+          font-size: 14px;
+        }
+      }
+
+      p {
+        color: #1e1e1e;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        opacity: 0.5;
+
+        @media screen and (max-width: 600px) {
+          font-size: 8px;
+        }
+      }
+    }
+
+    .burger {
+      width: 35px;
+      height: 35px;
+      display: none;
+
+      @media screen and (max-width: 1300px) {
+        display: block;
+        cursor: pointer;
+      }
+    }
+  }
+}

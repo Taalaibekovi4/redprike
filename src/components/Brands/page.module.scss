@@ -1,0 +1,109 @@
+.brands {
+  .wrapper {
+    margin: 36px 0;
+    @media screen and (max-width: 700px) {
+      margin: 0px 0;
+    }
+
+    .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h2 {
+        color: var(--Base-Black, #000);
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        font-family: Inter;
+
+        @media screen and (max-width: 700px) {
+          font-size: 18px;
+          padding-bottom: 10px;
+        }
+      }
+
+      .button {
+        padding: 16px;
+        border-radius: 8px;
+        background: #fff;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
+
+    .mySwiper {
+      padding: 30px 5px;
+      display: flex;
+
+      @media screen and (max-width: 700px) {
+        padding: 10px 0;
+      }
+
+      .card {
+        width: 100%;
+        height: 150px;
+
+        @media screen and (max-width: 700px) {
+          height: 90px;
+        }
+      }
+    }
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+
+  button {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10000px;
+    background: var(--white, #fff);
+
+    /* SH1 */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+
+    svg {
+      color: #1e1e1e;
+
+      text-align: center;
+      font-family: "Font Awesome 6 Pro";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 900;
+      line-height: normal;
+    }
+  }
+
+  span {
+    color: var(--Base-Black, #000);
+
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.swiper-pagination {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

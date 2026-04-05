@@ -1,0 +1,42 @@
+.Card {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(30, 30, 30, 0.20);
+    background: #FBFBFB;
+
+    img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .info {
+        display: grid;
+        row-gap: 6px;
+
+        h3 {
+            color: #545454;
+            font-feature-settings: 'clig'off, 'liga'off;
+            font-family: "Source Sans Pro700";
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+            /* 90.909% */
+        }
+
+        p {
+            color: #929292;
+
+            font-feature-settings: 'clig'off, 'liga'off;
+            font-family: "Source Sans Pro400";
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            opacity: 0.8;
+        }
+    }
+}

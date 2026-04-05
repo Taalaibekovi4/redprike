@@ -1,0 +1,110 @@
+.Block {
+    display: grid;
+    gap: 60px;
+    max-width: 1280px;
+    width: 90%;
+    padding-bottom: 50px;
+    margin: 0 auto;
+
+    @media screen and (max-width:890px) {
+        padding-bottom: 40px;
+        gap: 40px;
+    }
+
+    .h1 {
+        margin: 0px;
+        line-height: 1;
+        font-family: Inter;
+        font-weight: 700;
+        text-align: center;
+        font-size: 32px;
+        margin-top: 64px;
+        margin-bottom: 30px;
+
+        @media (min-width: 768px) {
+            font-size: 32px;
+            margin-top: 64px;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+            margin-top: 32px;
+            margin-bottom: 0px;
+        }
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-between;
+
+        @media screen and (max-width:890px) {
+            display: block;
+        }
+
+        img {
+            height: 300px;
+            background-color: black;
+
+            border-radius: 20px 0px 0px 20px;
+
+            @media screen and (max-width:890px) {
+                width: 100%;
+
+                object-fit: cover;
+                border-radius: 15px 15px 0px 0px;
+            }
+
+            :before {
+                background: #00000030;
+                content: "";
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                transition: all .2s linear;
+                width: 100%;
+
+            }
+        }
+
+        .contend {
+            @media (min-width: 890px) {
+                padding: 32px;
+            }
+
+            @media (min-width: 0px) {
+                padding: 16px 24px;
+            }
+
+            h2 {
+                margin: 0px 0px 16px;
+                font-size: 24px;
+                line-height: 1;
+                font-family: Inter;
+                font-weight: 700;
+            }
+
+            @media screen and (max-width:890px) {
+                h2 {
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                margin: 0px;
+                font-size: 14px;
+                font-family: Inter;
+                font-weight: 400;
+                white-space: pre-wrap;
+                line-height: 150%;
+            }
+        }
+    }
+}
+
+.Navigations {
+    max-width: 1280px;
+    width: 90%;
+    margin: 0 auto;
+}

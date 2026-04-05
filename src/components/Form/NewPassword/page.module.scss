@@ -1,0 +1,176 @@
+.recover {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h3 {
+    color: var(--151515, #151515);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.408px;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: var(--Base-Black, #000);
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 470px;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+      color: var(--151515, #151515);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.408px;
+      text-transform: uppercase;
+      opacity: 0.33;
+    }
+
+    input {
+      width: 100%;
+      height: 50px;
+      padding: 13px;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid #cecece;
+      background: #fff;
+    }
+  }
+
+  .password {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    background: #fff;
+    // &:focus-within {
+    //   border: 2px solid #161616;
+    //   background: var(--gray, #fff);
+    // }
+
+    .pass {
+      width: 100%;
+      height: 100%;
+      color: #161616;
+      background-color: transparent;
+      border: none;
+      padding: 13px;
+    }
+
+    .eye {
+      cursor: pointer;
+
+      .logo {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: #e71717;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .cancel {
+      text-align: center;
+      border: 1px solid #e71717;
+      border-radius: 8px;
+      background: #fff;
+      padding: 16px;
+      flex: 1 0 0;
+      color: #e71717;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0px 5px rgb(0 0 0 / 0.5);
+      }
+    }
+
+    button {
+      border-radius: 8px;
+      background: var(--main, #e71717);
+      padding: 16px;
+      flex: 1 0 0;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      // object-fit: cover;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0px 10px rgb(0 0 0 / 0.5);
+      }
+
+
+    }
+  }
+}

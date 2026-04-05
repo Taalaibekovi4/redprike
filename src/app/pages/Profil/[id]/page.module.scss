@@ -1,0 +1,136 @@
+.Blcoks {
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+
+    .info {
+        padding-bottom: 30px;
+        display: block;
+        display: grid;
+        row-gap: 30px;
+
+        h2 {
+            color: #000;
+
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
+
+.btn {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    gap: 24px;
+
+    button {
+        padding: 11px 16px;
+        color: var(--white, #fff);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        border-radius: 8px;
+        background: var(--main, #f7d617);
+    }
+
+    .btn_nov {
+        position: relative;
+
+        .modalbek {
+            width: 428px;
+            height: 300px;
+            padding: 16px;
+            overflow: scroll;
+            position: absolute;
+            top: 80px;
+            right: -288px;
+            border-radius: 8px;
+            background: var(--white, #fff);
+            box-shadow: 0px 2.767px 2.214px 0px rgba(0, 0, 0, 0.02),
+                0px 6.65px 5.32px 0px rgba(0, 0, 0, 0.03),
+                0px 12.522px 10.017px 0px rgba(0, 0, 0, 0.04),
+                0px 22.336px 17.869px 0px rgba(0, 0, 0, 0.04),
+                0px 41.778px 33.422px 0px rgba(0, 0, 0, 0.05),
+                0px 100px 80px 0px rgba(0, 0, 0, 0.07);
+            z-index: 999;
+
+            .isAccordionAcc {
+                svg {
+                    transition: 0.3s;
+                    transform: rotate(0.5turn);
+                }
+            }
+
+            .block {
+                display: grid;
+                grid-gap: 16px;
+
+                p {
+                    width: 396px;
+                    width: 100%;
+                    padding: 16px;
+                    border-radius: 8px;
+                    text-align: left;
+                    background: #F5F6F8;
+                    color: var(--Base-Black, #000);
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        .modalbek::-webkit-scrollbar {
+            width: 7px !important;
+        }
+
+        .modalbek::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: var(--main, #f7d617);
+        }
+
+    }
+}
+
+.isSearch {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: var(--white, #FFF) !important;
+
+    /* SH1 */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+    color: var(--Base-Black, #000) !important;
+    font-family: Inter-regular !important;
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+}
+
+.isSearchAcc {
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 16px;
+    background: #f7d617 !important;
+    color: var(--white, #FFF) !important;
+    font-family: Inter-regular !important;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400 !important;
+    line-height: normal;
+
+    /* SH1 */
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}

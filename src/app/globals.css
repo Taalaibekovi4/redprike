@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: Inter-Black;
+  src: url("/Fonts/Inter/Inter-Black.ttf");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: Inter-Blackltalik;
+  src: url("/Fonts/Inter/Inter-Blackltalik.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Inter-Bold;
+  src: url("/Fonts/Inter/Inter-Bold.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: Inter-ExtraBold;
+  src: url("/Fonts/Inter/Inter-ExtraBold.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: Inter-ExtraBoldItalik;
+  src: url("/Fonts/Inter/Inter-ExtraBoldItalik.ttf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Inter-ExtraLight;
+  src: url("/Fonts/Inter/Inter-ExtraLight.ttf");
+  font-weight: 900;
+}
+@font-face {
+  font-family: Inter-Bold;
+  src: url("/Fonts/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: Inter-regular;
+  src: url("/Fonts/Inter-Regular.ttf");
+}
+@font-face {
+  font-family: Source Sans Pro400;
+  src: url("/Fonts/Source-Sans-Pro/SourceSansPro-Regular.ttf");
+}
+@font-face {
+  font-family: Source Sans Pro900;
+  src: url("/Fonts/Source-Sans-Pro/SourceSansPro-Black.ttf");
+}
+@font-face {
+  font-family: Source Sans Pro700;
+  src: url("/Fonts/Source-Sans-Pro/SourceSansPro-Bold.ttf");
+}
+@font-face {
+  font-family: Source Sans Pro600;
+  src: url("/Fonts/Source-Sans-Pro/SourceSansPro-Semibold.woff");
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+li {
+  list-style: none;
+  color: var(--151515, #151515);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#center {
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.prev {
+  position: absolute;
+  bottom: 45px;
+  left: -15px;
+  box-shadow: (0px 4px 8px rgba(0, 0, 0, 0.15));
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+
+.next {
+  position: absolute;
+  bottom: 45px;
+  right: -15px;
+  box-shadow: (0px 4px 8px rgba(0, 0, 0, 0.15));
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+}
+.custom_pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.bullet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.border {
+  width: 10px;
+  height: 10px;
+  background-color: #ee5922;
+  opacity: 0.5;
+  border-radius: 50%;
+  transition: all 0.5s ease-in;
+}
+
+.swiperactive .border {
+  width: 40px;
+  height: 10px;
+  border-radius: 8px;
+  background-color: (--main, #ee5922);
+  opacity: 1;
+  transition: all 0.5s ease-in;
+}
+
+.error_alert {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}
+
+.success_alert {
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .error_alert {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+  }
+  .next {
+    display: none;
+  }
+  .prev {
+    display: none;
+  }
+}
+
+.formControl {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+  align-items: center;
+
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 8px;
+  input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--form-background);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 22px !important;
+    height: 22px !important;
+    border: 2px solid currentColor;
+    border-radius: 6px;
+
+    display: grid;
+    place-content: center;
+  }
+  p {
+    color: #161616;
+    font-family: Source Sans Pro400;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  @media screen and (max-width: 450px) {
+    p {
+      font-size: 14px !important;
+    }
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: CanvasText;
+  }
+
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+  }
+
+  input[type="checkbox"]:disabled {
+    --form-control-color: var(--form-control-disabled);
+
+    color: var(--form-control-disabled);
+    cursor: not-allowed;
+  }
+}
+
+.swiper {
+  margin-left: 0px !important;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 5px;
+}
+
+input[type="color"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea {
+  zoom: 0px !important;
+}
+input[type="search"],
+input[type="tel"],
+input[type="text"],
+input[type="time"],
+input[type="url"],
+input[type="week"],
+select:focus,
+textarea,
+input {
+  zoom: 0px !important;
+  zoom: 0px !important;
+}

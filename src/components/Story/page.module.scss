@@ -1,0 +1,112 @@
+.story__wrapper {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #211e1e;
+  z-index: 22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    display: block;
+  }
+
+  .story {
+    max-width: 1200px;
+    margin: 0 auto;
+    .mySwiper {
+      width: 1200px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      .card {
+        width: 100%;
+        height: 400px;
+        background-color: #111111;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        padding: 50px;
+        cursor: pointer;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          padding: 3px;
+        }
+      }
+    }
+
+    .mobile_wrapper {
+      display: none;
+      @media screen and (max-width: 600px) {
+        display: block;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+
+      .insta {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: transparent;
+      z-index: 9999;
+
+      .logo {
+        width: 40px;
+        height: 40px;
+        fill: #fff;
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+.applicationCard {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border-radius: 12px;
+  background: var(--white, #fff);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease;
+
+  h3 {
+    color: var(--Base-Black, #000);
+    font-feature-settings: "clig"off, "liga"off;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: "Source Sans Pro700";
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+
+      p {
+        color: #5a5a5a;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        font-family: "Source Sans Pro400";
+
+
+        opacity: 0.88;
+
+        @media screen and (max-width: 600px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .price {
+
+    white-space: nowrap;
+  }
+
+  .quantity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+      color: #5a5a5a;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.88;
+      font-family: "Source Sans Pro400";
+
+      @media screen and (max-width: 600px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .sent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 16px;
+
+    p {
+      color: #161616;
+      font-size: 17px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      opacity: 0.88;
+      font-family: "Source Sans Pro400";
+
+      @media screen and (max-width: 600px) {
+        font-size: 14px;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.story {
+  h2 {
+    color: var(--Base-Black, #000);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 24px 0;
+  }
+
+  .application_wrapper {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    gap: 24px;
+    grid-auto-flow: dense;
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 12fr;
+    }
+  }
+}

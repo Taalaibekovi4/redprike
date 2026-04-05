@@ -1,0 +1,311 @@
+.Card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.17);
+  position: relative;
+  overflow: hidden;
+  transition: box-shadow 0.25s ease, transform 0.2s ease;
+
+  &:hover {
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+  }
+
+  .card_link {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    padding: 12px 12px 0;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+      height: 150px;
+      padding: 8px 8px 0;
+    }
+  }
+
+  .img_none {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    padding: 12px 12px 0;
+    box-sizing: border-box;
+    @media screen and (max-width: 600px) {
+      height: 150px;
+      padding: 8px 8px 0;
+    }
+  }
+
+  .Popular {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 11px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #e71717 0%, #ff8484 200%);
+
+    @media screen and (max-width: 600px) {
+      left: 9px;
+      font-size: 12px;
+      background: var(--lin, linear-gradient(90deg, #e71717 0%, #f97a72 200%));
+      padding: 8px;
+    }
+  }
+
+  .star {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 1;
+    border-radius: 50%;
+    width: 39px;
+    height: 39px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+
+    @media screen and (max-width: 600px) {
+      top: 18px;
+      right: 9px;
+      width: 24px;
+      height: 24px;
+    }
+
+    .stars {
+      width: 16px;
+      height: 16px;
+      @media screen and (max-width: 600px) {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .star:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .title {
+    padding: 16px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 16px;
+    @media screen and (max-width: 600px) {
+      gap: 10px;
+      padding: 12px;
+    }
+
+    .name {
+      color: var(--1-e-1-e-1-e, #1e1e1e);
+      font-family: Inter;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.35;
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+    }
+
+    .name_mobile {
+      display: none;
+      @media screen and (max-width: 600px) {
+        display: block;
+        font-size: 12px;
+        color: var(--1-e-1-e-1-e, #1e1e1e);
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.35;
+      }
+    }
+
+    .inStock {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+
+      .color {
+        color: var(--1-e-1-e-1-e, #1e1e1e);
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+      }
+
+      .roll {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--1-e-1-e-1-e, #1e1e1e);
+        opacity: 1;
+      }
+    }
+
+    p {
+      color: #1e1e1e;
+      font-size: 12px;
+      font-weight: 400;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 4px;
+
+      span {
+        opacity: 0.5;
+      }
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+
+      .prices {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        h5 {
+          color: var(--1-e-1-e-1-e, #1e1e1e);
+          font-size: 14px;
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          @media screen and (max-width: 600px) {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .button {
+    padding: 0 16px 16px;
+    margin-top: auto;
+
+    @media screen and (max-width: 600px) {
+      padding: 0 12px 12px;
+    }
+
+    .btn_added {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+
+      span {
+        color: #1e1e1e;
+        font-size: 14px;
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba($color: #e71717, $alpha: 0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+        @media screen and (max-width: 600px) {
+          width: 35px;
+          height: 35px;
+        }
+
+        &:hover {
+          background: rgba($color: #e71717, $alpha: 0.5);
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .logo {
+          width: 24px;
+          height: 24px;
+          fill: #e71717;
+          @media screen and (max-width: 600px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    .btn {
+      width: 100%;
+      color: #fff;
+      background: #e71717;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      border-radius: 8px;
+      border: none;
+      display: flex;
+      padding: 12px;
+      justify-content: center;
+      align-items: center;
+      transition: box-shadow 0.2s ease, opacity 0.2s ease;
+      cursor: pointer;
+      font-family: Inter, sans-serif;
+
+      @media screen and (max-width: 600px) {
+        font-size: 12px;
+        background: #e71717;
+        padding: 10px;
+      }
+
+      &:disabled {
+        cursor: not-allowed;
+      }
+
+      &:focus-visible {
+        outline: 2px solid rgba(0, 0, 0, 0.35);
+        outline-offset: 2px;
+      }
+    }
+
+    .btn:hover:not(:disabled) {
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+  }
+}

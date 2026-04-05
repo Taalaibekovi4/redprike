@@ -1,0 +1,220 @@
+.recover {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+
+  .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: transparent;
+
+    .logo {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .cont {
+    .contai {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      @media screen and (max-width: 600px) {
+        gap: 5px;
+      }
+
+      input {
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        color: var(--main, #e71717);
+        font-family: Inter;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        @media screen and (max-width: 600px) {
+          width: 45px;
+          height: 45px;
+          font-size: 20px;
+        }
+      }
+
+      input:focus {
+        background-color: #fff;
+        border: 1px solid #e71717;
+      }
+    }
+  }
+
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    width: 100%;
+    height: 50px;
+    padding: 13px;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    background: #fff;
+  }
+
+  .request {
+    color: var(--Base-Black, #000);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+
+  .request_btn {
+    text-align: center;
+    color: #e71717;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    background-color: transparent;
+  }
+
+  h3 {
+    color: var(--151515, #151515);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.408px;
+    text-align: center;
+  }
+
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      color: var(--Base-Black, #000);
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 470px;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .password {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    background: #fff;
+    margin-top: 5px;
+    // &:focus-within {
+    //   border: 2px solid #161616;
+    //   background: var(--gray, #fff);
+    // }
+
+    .pass {
+      width: 100%;
+      height: 100%;
+      color: #161616;
+      background-color: transparent;
+      border: none;
+    }
+
+    .eye {
+      cursor: pointer;
+
+      .logo {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: #e71717;
+      }
+    }
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .cansel {
+      text-align: center;
+      border: 1px solid #e71717;
+      border-radius: 8px;
+      background: #fff;
+      padding: 16px;
+      flex: 1 0 0;
+      color: #e71717;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0px 5px rgb(0 0 0 / 0.5);
+      }
+    }
+
+    button {
+      border-radius: 8px;
+      background: var(--main, #e71717);
+      padding: 16px;
+      flex: 1 0 0;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+
+      @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+      &:hover {
+        box-shadow: 0 0px 10px rgb(0 0 0 / 0.5);
+      }
+    }
+  }
+}

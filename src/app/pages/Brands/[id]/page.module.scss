@@ -1,0 +1,16 @@
+.brands {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr 3fr;
+  grid-gap: 24px;
+  grid-auto-flow: dense;
+  margin-bottom: 50px;
+
+  @media screen and (max-width: 1024px) {
+    grid-template-columns: 4fr 4fr 4fr;
+  }
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 6fr 6fr;
+    grid-gap: 16px;
+  }
+}

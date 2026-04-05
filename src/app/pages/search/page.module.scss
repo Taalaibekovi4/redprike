@@ -1,0 +1,19 @@
+.Catds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 30px;
+
+    @media screen and (max-width: 1039px) {
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media screen and (max-width: 770px) {
+            grid-template-columns: 1fr 1fr;
+
+            @media screen and (max-width: 401px) {
+                gap: 15px;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+}

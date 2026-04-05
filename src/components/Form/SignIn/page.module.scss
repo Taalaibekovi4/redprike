@@ -1,0 +1,204 @@
+.signIn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  h2 {
+    color: var(--151515, #151515);
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: -0.408px;
+    text-align: center;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    label {
+      color: var(--151515, #151515);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: -0.408px;
+      text-transform: uppercase;
+      opacity: 0.33;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px;
+      display: block;
+      border-radius: 8px;
+      border: 1px solid #cecece;
+      background: #fff;
+    }
+
+    .tel {
+      width: 100%;
+      height: 50px;
+    }
+  }
+
+  .password {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 8px;
+    border: 1px solid #cecece;
+    background: #fff;
+    // &:focus-within {
+    //   border: 2px solid #161616;
+    //   background: var(--gray, #fff);
+    // }
+
+    .pass {
+      width: 100%;
+      height: 100%;
+      color: #161616;
+      background-color: transparent;
+      border: none;
+    }
+
+    .eye {
+      cursor: pointer;
+
+      .logo {
+        width: 20px;
+        height: 20px;
+        margin-right: 10px;
+        fill: #e71717;
+      }
+    }
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .forgot {
+      color: var(--main, #e71717);
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    .checkbox {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+
+      .title {
+        color: var(--Base-Black, #000);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .check {
+        appearance: none;
+        width: 30px;
+        height: 30px;
+        border: 2px solid #e71717;
+        border-radius: 50%;
+        cursor: pointer;
+        outline: none;
+
+        &:checked {
+          background-image: url("/img/.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .btn_grey {
+    border-radius: 8px;
+    background: #f2f2f2;
+    padding: 16px 0px;
+    color: var(--main, #e71717);
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  .btn_grey:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  }
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+
+    .cancel {
+      cursor: pointer;
+      text-align: center;
+      padding: 16px;
+      gap: 8px;
+      flex: 1 0 0;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      border-radius: 8px;
+      border: 1px solid #e71717;
+      background: #fff;
+      color: #e71717;
+
+      &:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+    button {
+      border-radius: 8px;
+      background: var(--main, #e71717);
+      padding: 16px;
+      gap: 8px;
+      flex: 1 0 0;
+      color: #fff;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+
+      &:hover {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+
+      &:first-child {
+        border-radius: 8px;
+        border: 1px solid #e71717;
+        background: #fff;
+        color: #e71717;
+
+        &:hover {
+          box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+      }
+    }
+  }
+}

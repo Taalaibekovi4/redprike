@@ -1,0 +1,59 @@
+.Block2 {
+  width: 100%;
+  height: 100vh;
+  color: violet;
+  padding: 30px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  background-color: #fff;
+  z-index: 111;
+  margin-top: -121px;
+  @media screen and (max-width: 600px) {
+    margin-top: -82px;
+  }
+  .loader {
+    display: grid;
+    row-gap: 16px;
+  }
+}
+.loadersd {
+  width: 38px;
+  height: 38px;
+  border: 10px solid #fff;
+  border-radius: 50%;
+  position: relative;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin: 0 auto;
+}
+.loadersd::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  inset: -10px;
+  border-radius: 50%;
+  border: 10px solid var(--Green, #e71717);
+  animation: prixClipFix 2s infinite linear;
+}
+
+@keyframes prixClipFix {
+  0% {
+    clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+  }
+  25% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+  }
+  50% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+  }
+  75% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 0 100%, 0 0);
+  }
+}
